@@ -69,7 +69,7 @@
   transition-duration: .3s;
   transition-timing-function: ease;
   display: flex;
-  position: relative;
+  position: static;
   top: -32px;
   box-shadow: 0 1px 2px #1018280d;
 }
@@ -559,7 +559,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 45px;
+  top: 44px;
 }
 
 .align-center {
@@ -600,11 +600,17 @@
 
 .uui-heading-xlarge.h1-maintext.text-span-h1 {
   color: #ff009a;
+  position: relative;
+  top: -21px;
 }
 
 .uui-max-width-xlarge {
   width: 100%;
   max-width: 64rem;
+}
+
+.uui-max-width-xlarge.align-center {
+  max-width: none;
 }
 
 .uui-text-align-center {
@@ -621,11 +627,11 @@
 
 .uui-container-large {
   width: 100%;
-  max-width: 80rem;
+  max-width: none;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  position: static;
 }
 
 .uui-page-padding {
@@ -639,14 +645,14 @@
 
 .uui-page-padding.container-header {
   position: relative;
-  top: 67px;
+  top: 88px;
 }
 
 .uui-section_heroheader12 {
   background-image: url('../images/background-2.jpeg');
   background-position: 50% 0;
   background-size: auto;
-  height: 80vh;
+  height: 90vh;
   position: relative;
   top: -29px;
 }
@@ -722,7 +728,7 @@
   color: var(--untitled-ui--gray600);
   text-align: left;
   letter-spacing: normal;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   line-height: 1.4;
 }
@@ -778,7 +784,8 @@
 .uui-layout70_item {
   text-align: center;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   display: flex;
 }
 
@@ -794,7 +801,7 @@
 
 .uui-section_layout70 {
   height: 100%;
-  margin-top: 51px;
+  margin-top: 38px;
   position: static;
   top: -93px;
 }
@@ -1072,7 +1079,7 @@
 
 .uui-container-small {
   width: 100%;
-  max-width: 48rem;
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1305,9 +1312,9 @@
   letter-spacing: normal;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .uui-faq01_question {
@@ -1331,7 +1338,8 @@
 }
 
 .uui-faq01_list {
-  max-width: 48rem;
+  max-width: none;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1807,7 +1815,7 @@
 }
 
 .div-block.button-header {
-  top: 78px;
+  top: 73px;
 }
 
 .text-block-2 {
@@ -1819,7 +1827,7 @@
   align-items: center;
   display: flex;
   position: relative;
-  top: -13px;
+  top: -9px;
 }
 
 .contact-text {
@@ -2197,6 +2205,7 @@
   background-position: 0 100%;
   background-size: cover;
   border: 1px solid #000;
+  justify-content: flex-start;
   align-items: center;
   min-height: 4.5rem;
   padding-left: 2rem;
@@ -2805,9 +2814,9 @@
 
 .cf-hero-section-3 {
   background-color: #0d0e10;
-  background-image: url('../images/background-2.jpeg'), linear-gradient(#0d0e10 70%, #fff 70%);
-  background-position: 50%, 0 0;
-  background-size: cover, auto;
+  background-image: url('../images/background-2.jpeg');
+  background-position: 50%;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -3215,6 +3224,10 @@
 
 .body {
   background-color: #000;
+}
+
+.bold-text-3 {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1280px) {
@@ -3697,14 +3710,14 @@
   }
 
   .uui-navbar07_link-2 {
-    color: var(--untitled-ui--gray900);
+    color: var(--untitled-ui--white);
     width: 100%;
     padding: .75rem 0;
     font-size: 1.125rem;
   }
 
   .uui-navbar07_link-2:hover {
-    color: var(--untitled-ui--gray900);
+    color: #ff009a;
   }
 
   .uui-navbar07_dropdown-link-2 {
@@ -3774,7 +3787,7 @@
   .uui-navbar07_menu-2 {
     border-top: 1px solid var(--untitled-ui--gray100);
     -webkit-text-fill-color: inherit;
-    background-color: #fff;
+    background-color: #000;
     background-clip: border-box;
     align-items: flex-start;
     height: 100vh;
@@ -4001,7 +4014,9 @@
 
   .uui-text-size-xlarge.header-paragraph {
     text-align: left;
-    font-size: .8rem;
+    margin-bottom: 7px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
     position: static;
   }
 
@@ -4045,12 +4060,20 @@
   }
 
   .uui-container-large {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     position: static;
   }
 
   .uui-page-padding {
-    padding-left: 1rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
     padding-right: 1rem;
+    display: block;
   }
 
   .uui-page-padding.container-header {
@@ -4126,7 +4149,19 @@
   }
 
   .uui-text-size-large {
+    text-align: left;
+    background-color: #00000096;
+    border-radius: 11px;
+    padding: 14px;
+    font-family: Montserrat, sans-serif;
     font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .uui-text-size-large.p-pricing-nosotros {
+    background-color: var(--untitled-ui--white);
+    color: var(--untitled-ui--gray900);
+    padding-left: 0;
   }
 
   .uui-space-xsmall {
@@ -4134,8 +4169,14 @@
   }
 
   .uui-heading-medium {
+    text-align: left;
     font-size: 1.75rem;
     line-height: 1.4;
+  }
+
+  .uui-heading-subheading {
+    text-align: left;
+    font-family: Montserrat, sans-serif;
   }
 
   .uui-testimonial15_arrow:hover {
@@ -4180,6 +4221,10 @@
   .max-width-full-mobile-landscape {
     width: 100%;
     max-width: none;
+  }
+
+  .uui-section_cta08 {
+    margin-top: 0;
   }
 
   .uui-contact05_form-wrapper {
@@ -4322,6 +4367,10 @@
     line-height: 1.2;
   }
 
+  .text-span.textspan-servicios {
+    font-size: 4rem;
+  }
+
   .div-block {
     justify-content: flex-start;
     align-items: center;
@@ -4332,6 +4381,11 @@
     align-items: center;
     position: static;
     top: 35px;
+  }
+
+  .code-embed {
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .uui-button-2 {
@@ -4504,7 +4558,7 @@
   }
 
   .cf-features-4-tabs-heading {
-    font-size: 35px;
+    font-size: 4rem;
   }
 
   .cf-floating-white-div {
@@ -4534,23 +4588,37 @@
   }
 
   .video-container {
+    width: 84%;
     margin-bottom: 140px;
   }
 
-  .cf-button-gradient, .cf-cta-button, .cf-22px-paragraph---white {
+  .cf-button-gradient, .cf-cta-button {
     font-size: 20px;
   }
 
+  .cf-22px-paragraph---white {
+    text-align: left;
+    font-size: 1rem;
+  }
+
   .cf-82px-heading {
+    text-align: left;
     font-size: 50px;
   }
 
   .cf-1140px-wrapper---home-vertical {
+    justify-content: space-between;
+    align-items: flex-start;
     width: 90%;
   }
 
   .cf-hero-section-3 {
-    background-image: linear-gradient(#0d0e10 75%, #fff 70%);
+    z-index: 1;
+    background-image: url('../images/background-movil.png');
+    background-position: 50%;
+    background-size: cover;
+    height: 90%;
+    position: static;
   }
 
   .image-3.dibujo {
@@ -4572,8 +4640,25 @@
     left: 42%;
   }
 
+  .cf-client-review-white {
+    background-color: #0000;
+    padding: 20px 16px;
+  }
+
+  .cf-home-6---clients-container {
+    background-color: #83008c00;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   .cf-bottom-left-contain {
+    justify-content: center;
+    align-items: flex-start;
     max-width: none;
+  }
+
+  .cf-1140px-wrapper---hero-6 {
+    padding-left: 20px;
   }
 
   .cf-hero-section-6 {
@@ -4586,6 +4671,16 @@
 
   .cf-58px-heading---white {
     font-size: 46px;
+  }
+
+  .fundador-block {
+    background-color: #0000007d;
+    border-radius: 17px;
+  }
+
+  .text-span-4 {
+    font-size: .9rem;
+    font-weight: 400;
   }
 }
 
@@ -4612,17 +4707,22 @@
   .uui-text-size-xlarge.header-paragraph {
     text-align: left;
     font-size: 1rem;
+    font-weight: 500;
     position: relative;
     top: 0;
   }
 
   .uui-heading-xlarge.h1-maintext {
     text-align: left;
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 
   .uui-heading-xlarge.h1-maintext.text-span-h1 {
     font-size: 2.4rem;
+  }
+
+  .uui-max-width-xlarge.align-center {
+    position: relative;
   }
 
   .uui-padding-vertical-xhuge {
@@ -4632,14 +4732,21 @@
   }
 
   .uui-page-padding {
-    margin-left: 8px;
-    margin-right: 8px;
+    margin: auto;
     position: static;
     top: 0;
   }
 
   .uui-page-padding.container-header {
-    top: 47px;
+    height: 90%;
+    position: relative;
+    top: 94px;
+  }
+
+  .uui-section_heroheader12 {
+    padding-left: 24px;
+    padding-right: 4px;
+    top: -14px;
   }
 
   .uui-button-row.button-row-center {
@@ -4647,6 +4754,10 @@
     grid-row-gap: 0rem;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .uui-text-size-medium {
+    font-weight: 600;
   }
 
   .uui-heading-xxsmall {
@@ -4661,12 +4772,68 @@
     align-items: flex-start;
   }
 
+  .uui-pricing06_price.pices-color {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .uui-pricing06_plan {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    display: flex;
+  }
+
+  .uui-pricing06_component {
+    grid-column-gap: 1.2rem;
+    grid-row-gap: 1.2rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .uui-text-size-large {
+    background-color: #0000;
+  }
+
+  .uui-text-size-large.p-pricing-servicios {
+    background-color: #fff0;
+  }
+
+  .uui-section_pricing06.padding-pricing-servicios {
+    margin-top: 32px;
+    padding-left: 20px;
+  }
+
   .uui-testimonial15_mask {
     width: 95%;
   }
 
+  .uui-contact05_content {
+    flex-flow: column;
+    margin: auto;
+    display: flex;
+    position: relative;
+  }
+
   .uui-contact05_component {
     grid-template-columns: 1fr;
+  }
+
+  .uui-section_contact05.seccion-contacto-servicios {
+    flex-flow: column;
+    margin: auto;
+    padding: 27px;
+    display: flex;
+  }
+
+  .uui-section_faq01.faq-servicios {
+    padding: 23px;
   }
 
   .uui-footer04_bottom-wrapper {
@@ -4709,6 +4876,22 @@
     grid-template-columns: 1fr;
   }
 
+  .text-span.textspan-servicios {
+    line-height: 115%;
+  }
+
+  .text-span.textspan-nosotros {
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 1.2;
+    display: flex;
+  }
+
+  .titulo-servicios {
+    font-size: 2rem;
+  }
+
   .text-span-3 {
     font-size: 2.2rem;
   }
@@ -4748,7 +4931,7 @@
   }
 
   .cf-tabs-content-heading {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   .cf-tabs-left-wrap {
@@ -4770,15 +4953,25 @@
   }
 
   .cf-tabs-menu {
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 40px;
   }
 
   .cf-tabs-header-text {
+    text-align: left;
     font-size: 16px;
   }
 
   .cf-features-4-tabs-heading {
-    font-size: 30px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: left;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 3.8rem;
+    display: flex;
   }
 
   .bold-text-2 {
@@ -4788,8 +4981,14 @@
   }
 
   .video-container {
-    border-radius: 0;
+    background-color: #000;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: 12px;
     margin-bottom: 100px;
+    top: 0;
   }
 
   .cf-cta-arrow-div {
@@ -4811,7 +5010,7 @@
   }
 
   .cf-22px-paragraph---white {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .cf-gradient-span {
@@ -4819,12 +5018,38 @@
   }
 
   .cf-82px-heading {
-    font-size: 40px;
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
+    text-align: left;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2.6rem;
+    display: flex;
+    position: relative;
+  }
+
+  .cf-1140px-wrapper---home-vertical {
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 0;
+    top: -43px;
   }
 
   .cf-hero-section-3 {
-    background-image: linear-gradient(#0d0e10 85%, #fff 70%);
+    background-color: #0d0e1000;
+    background-image: url('../images/background-movil.png');
+    background-position: 100% 0;
+    background-size: auto;
+    height: auto;
     margin-bottom: 40px;
+  }
+
+  .image-3 {
+    top: 614px;
+    bottom: 0;
+    left: 263px;
   }
 
   .image-3.dibujo {
@@ -4833,7 +5058,13 @@
   }
 
   .image-3.dibujo.dibujo4 {
-    left: -27%;
+    left: -23%;
+    right: -18%;
+  }
+
+  .image-3.dibujo.dibujo4.dibujovideo {
+    top: -12%;
+    bottom: -47%;
   }
 
   .lightbox-link {
@@ -4858,6 +5089,11 @@
   .imagen-video-fiesta {
     border-radius: 20px;
     width: 100%;
+  }
+
+  .black-bg {
+    width: 100%;
+    display: flex;
   }
 
   .cf-testimonial-position {
@@ -4917,6 +5153,10 @@
     font-size: 16px;
   }
 
+  .cf-review-logo {
+    width: 50%;
+  }
+
   .cf-bottom-left-contain {
     margin-top: 0;
     margin-bottom: 0;
@@ -4927,11 +5167,24 @@
   }
 
   .cf-20px-paragraph---white {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .cf-hero-section-6 {
+    background-image: url('../images/background-movil.png');
+    background-position: 50%;
+    background-size: cover;
     padding-bottom: 100px;
+  }
+
+  .code-embed-2 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    position: static;
+    left: -401px;
   }
 
   .cf-features-section-1-block-paragraph {
