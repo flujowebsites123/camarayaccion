@@ -7854,6 +7854,7 @@ strong {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
+    overflow: visible;
   }
 
   .uui-pricing06_feature {
@@ -7982,6 +7983,7 @@ strong {
   .uui-section_cta08 {
     background-color: #fcf3f8;
     background-image: none;
+    overflow: visible;
   }
 
   .uui-contact05_image {
@@ -8726,6 +8728,7 @@ strong {
     padding-top: 160px;
     padding-bottom: 150px;
     padding-left: 4px;
+    overflow: visible;
   }
 
   .texto-testimony {
