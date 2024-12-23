@@ -3578,7 +3578,6 @@ strong {
 .body-3 {
   border-radius: 0;
   margin: 4px;
-  overflow: visible;
 }
 
 .cf-wrapper-1200px-2 {
@@ -8666,10 +8665,6 @@ strong {
     top: 74px;
     left: -107px;
     transform: rotate(-20deg);
-  }
-
-  .body-3 {
-    overflow: hidden;
   }
 
   .cf-colourful-text-2 {
