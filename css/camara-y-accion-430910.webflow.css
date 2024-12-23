@@ -657,7 +657,10 @@ strong {
 }
 
 .uui-page-padding.container-header {
+  padding-top: 0;
   padding-bottom: 0;
+  position: relative;
+  top: -54px;
 }
 
 .uui-section_heroheader12 {
@@ -671,7 +674,6 @@ strong {
   height: 50em;
   margin: 0 4.5px 48px;
   display: flex;
-  overflow: hidden;
 }
 
 .uui-button-icon {
