@@ -700,7 +700,7 @@ strong {
   margin-top: 0;
   margin-bottom: 40px;
   display: flex;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .uui-button-icon {
@@ -846,7 +846,7 @@ strong {
   margin-bottom: 80px;
   position: static;
   top: -93px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .uui-pricing06_icon-wrapper {
@@ -1149,7 +1149,7 @@ strong {
   padding-top: 80px;
   padding-left: 12px;
   padding-right: 12px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .uui-section_cta08 {
@@ -1160,7 +1160,7 @@ strong {
   padding-left: 12px;
   padding-right: 12px;
   position: static;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .uui-contact05_image {
@@ -3945,7 +3945,7 @@ strong {
   border-radius: 12px;
   margin: 80px 0;
   padding: 80px 12px 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cf-pricing-toggle-header-wrapper {
