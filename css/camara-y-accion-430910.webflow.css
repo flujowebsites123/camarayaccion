@@ -579,7 +579,7 @@ strong {
   text-align: center;
   flex-flow: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 0;
   margin-right: 0;
   display: flex;
@@ -8035,7 +8035,7 @@ strong {
   }
 
   .uui-testimonial15_component {
-    overflow: hidden;
+    overflow: visible;
   }
 
   .uui-section_testimonial15 {
@@ -8059,6 +8059,7 @@ strong {
 
   .uui-contact05_image {
     width: 98%;
+    overflow: visible;
   }
 
   .uui-contact05_content {
@@ -8772,7 +8773,7 @@ strong {
 
   .body-3 {
     margin: 2px 2px 4px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .cf-colourful-text-2 {
