@@ -1022,10 +1022,10 @@ strong {
 
 .uui-text-size-large {
   color: var(--untitled-ui--gray900);
-  text-align: left;
+  text-align: center;
   letter-spacing: normal;
-  font-family: Ubuntu, Helvetica, sans-serif;
-  font-size: 1.125rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -2828,6 +2828,7 @@ strong {
 }
 
 .text-block-8, .text-block-9, .text-block-10 {
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
 }
@@ -3286,7 +3287,7 @@ strong {
 }
 
 .cf-home-6---top-contain {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   max-width: 510px;
@@ -5026,19 +5027,21 @@ strong {
 }
 
 .cf-faq-main-wrapper.horizontal {
-  grid-column-gap: 80px;
-  grid-row-gap: 80px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  max-width: none;
   margin-left: 0;
   margin-right: 0;
-  padding: 60px 0 60px 20px;
+  padding: 60px 0;
 }
 
 .cf-faq-section-1 {
   background-color: var(--untitled-ui--white);
+  width: 100vw;
   padding: 40px 8px;
   position: relative;
 }
@@ -5157,8 +5160,8 @@ strong {
   max-width: none;
   margin-top: 0;
   margin-bottom: 24px;
-  font-family: Lato, sans-serif;
-  font-size: 1.1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
   font-weight: 700;
   line-height: 156%;
 }
@@ -5181,7 +5184,7 @@ strong {
 
 .cf-faqs-wrapper {
   width: 60%;
-  padding-top: 0;
+  padding: 20px 28px 28px;
 }
 
 .cf-bottom-line {
@@ -5222,10 +5225,10 @@ strong {
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
-  width: 50%;
+  width: 100%;
   max-width: none;
   padding-left: 8px;
-  padding-right: 8px;
+  padding-right: 20px;
   display: flex;
 }
 
@@ -5475,15 +5478,15 @@ strong {
 }
 
 .speaker-arrow {
-  background-color: #000;
-  border: 1px solid #00000094;
+  background-color: #fff;
+  border: 2px solid #000;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
   display: flex;
-  inset: auto 0% 0% -1%;
+  inset: auto 0% 0% -7%;
 }
 
 .speaker-arrow:hover {
@@ -5606,6 +5609,7 @@ strong {
 }
 
 .slide-arrow {
+  filter: invert();
   width: 18px;
 }
 
@@ -5731,6 +5735,7 @@ strong {
 
 .uui-text-size-medium-2.text-color-primary700 {
   color: var(--untitled-ui--gray900);
+  text-align: center;
   padding-bottom: 8px;
   font-weight: 400;
 }
@@ -5996,7 +6001,7 @@ strong {
   grid-column-gap: 22px;
   grid-row-gap: 22px;
   flex-flow: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -6024,8 +6029,8 @@ strong {
 ._148-icon-wrapper {
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   margin-left: 32px;
   margin-right: 32px;
   display: flex;
@@ -6033,7 +6038,7 @@ strong {
 }
 
 ._148-sm-inner-circle {
-  border: 1px solid #ffaff966;
+  border: 1px solid #ff7ff566;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -6042,7 +6047,7 @@ strong {
 }
 
 ._148-sm-inner-square {
-  border: 1px solid #ffaff9;
+  border: 1px solid #ff72f4;
   display: block;
   position: absolute;
   inset: 0%;
@@ -6050,12 +6055,20 @@ strong {
 }
 
 ._148-sm-icon-image {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 45px;
   position: relative;
 }
 
-.fundadores-cards, .paragraph-nosotros-whitebg {
+.fundadores-cards {
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+}
+
+.paragraph-nosotros-whitebg {
   font-size: 14px;
   font-weight: 500;
 }
@@ -9789,9 +9802,8 @@ strong {
 
   .uui-heading-xlarge.h1-maintext {
     text-align: left;
-    width: auto;
     margin-top: 1.4rem;
-    font-size: 4rem;
+    font-size: 3.3rem;
     line-height: 1;
   }
 
@@ -9801,7 +9813,7 @@ strong {
   }
 
   .uui-heading-xlarge.h1-maintext.text-span-h1.text-span-7 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   .uui-max-width-xlarge.align-center {
@@ -9821,6 +9833,8 @@ strong {
     justify-content: center;
     align-items: flex-start;
     margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
     position: static;
     top: -29px;
@@ -9842,6 +9856,7 @@ strong {
   .uui-container-large {
     justify-content: center;
     align-items: flex-start;
+    width: 98vw;
   }
 
   .uui-page-padding {
@@ -9861,7 +9876,7 @@ strong {
   }
 
   .uui-section_heroheader12 {
-    min-width: 100px;
+    min-width: 100%;
     min-height: 100svh;
     padding-left: 0;
     padding-right: 0;
@@ -10287,6 +10302,12 @@ strong {
     font-size: 2.4rem;
   }
 
+  .link {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
   .text-span-3 {
     font-size: 2.2rem;
   }
@@ -10310,6 +10331,11 @@ strong {
     padding-bottom: 0;
     position: relative;
     top: 0;
+  }
+
+  .contact-text {
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .text-block-3, .text-block-4, .text-block-5, .text-block-6 {
@@ -11062,8 +11088,14 @@ strong {
   }
 
   .all-ps {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    flex-flow: column;
+    padding-bottom: 0;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     font-weight: 700;
+    display: flex;
   }
 
   .all-ps.p-white {
@@ -11071,7 +11103,7 @@ strong {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 19px;
     font-size: 1rem;
   }
 
@@ -11147,6 +11179,7 @@ strong {
   .form-text {
     color: #000;
     padding-left: 4px;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
   }
 
@@ -11271,8 +11304,8 @@ strong {
     text-align: left;
     justify-content: center;
     align-items: flex-start;
-    width: 98%;
-    padding-right: 13px;
+    width: 100%;
+    padding-right: 0;
     display: block;
   }
 
@@ -11289,6 +11322,11 @@ strong {
 
   .h3-pricing {
     font-size: 1.8rem;
+  }
+
+  .text-span-7 {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
   }
 
   .text-span-7.gradient-pricing, .text-span-7.gradient-testimony, .text-span-7.gradient-form, .text-span-7.gradient-faq {
@@ -11326,16 +11364,21 @@ strong {
     text-align: left;
     margin-bottom: 40px;
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1.2;
+  }
+
+  .cf-faqs-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .cf-faq-bold-text {
     margin-bottom: 0;
     font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   .cf-faqs-text-wrap {
@@ -11377,9 +11420,9 @@ strong {
   .body-display.large {
     text-align: left;
     padding-left: 0;
-    font-family: Lato, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.2em;
   }
 
@@ -11402,6 +11445,7 @@ strong {
 
   .speaker-slider {
     align-items: center;
+    width: 100%;
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -11411,12 +11455,12 @@ strong {
   }
 
   .speaker-arrow {
-    background-color: #000000e6;
+    background-color: #ffffffe6;
     width: 48px;
     height: 48px;
     top: auto;
     bottom: -15px;
-    right: 37%;
+    right: 46%;
   }
 
   .speaker-arrow.left {
@@ -11433,6 +11477,7 @@ strong {
   .speaker-slider-wrapper {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .speaker-slide {
@@ -11444,7 +11489,7 @@ strong {
 
   .speaker-info {
     flex-flow: column;
-    width: 70%;
+    width: 90%;
     margin-top: 40px;
     margin-left: 0;
     padding: 0;
@@ -11468,6 +11513,10 @@ strong {
     width: 80%;
     height: 40vh;
     min-height: 300px;
+  }
+
+  .slide-arrow {
+    filter: invert();
   }
 
   .imagen-4 {
@@ -11542,7 +11591,9 @@ strong {
   }
 
   .bold-text-7 {
-    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   .social-media-panel {
